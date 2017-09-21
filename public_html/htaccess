@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^brittanyheit\.com [OR]
+RewriteCond %{HTTP_HOST} ^106\.180\.44\.212
+RewriteRule (.*) http://www.brittanyheit.com/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.php$ http://www.brittanyheit.com/$1 [R=301,L]
+
